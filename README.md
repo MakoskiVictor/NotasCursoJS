@@ -20,3 +20,34 @@ function sumaRecursiva (num, tot = 0) {
 
 ## PROTOTYPE
 
+### Constructor function
+
+```javascript
+//Constructor inicia con mayúscula
+function Animal (nombre, genero) {
+    //Atributos
+    this.nombre = nombre;
+    this.genero = genero;
+}
+```
+
+### Generar nuevas instancias
+
+Function que crea una nueva instancia basado en el constructor Animal
+
+```javascript
+const snoopy = new Animal("Snoopy", "macho")
+
+const lolaBunny = new Animal("Lola Bunny", "Hembra")
+```
+
+## Agregar métodos al prototype del constructor
+
+Los métodos es mejor crearlos fuera del constructor porque al generar nuevas instancias se hace una copia de todo lo que se encuentra dentro del mismo. Entonces todos los métodos se repetirán en cada instancia, lo que ocupará memoria a la larga y será menos eficiente.
+
+```javascript
+Animal.prototype.sonar = function () {
+    //Recordar usar el this en la function si necesita usar uno de los atributos del objeto.
+    console.log(`Hola me llamo ${this.nombre}`)
+}
+```
