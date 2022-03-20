@@ -51,3 +51,5 @@ Animal.prototype.sonar = function () {
     console.log(`Hola me llamo ${this.nombre}`)
 }
 ```
+## Class
+
