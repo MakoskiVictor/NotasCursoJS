@@ -17,3 +17,6 @@ function sumaRecursiva (num, tot = 0) {
     return sumar(num, tot);
 }
 ```
+
+## PROTOTYPE
+
