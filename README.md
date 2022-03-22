@@ -53,3 +53,20 @@ Animal.prototype.sonar = function () {
 ```
 ## Class
 
+```javascript
+class Animal {
+    constructor (nombre, genero) {
+        //Acá van los atributos
+        this.nombre = nombre;
+        this.genero = genero;
+    }
+    //Los metodos van fuera del constructor pero dentro de la class
+    sonar() {
+        console.log(`Me llamo ${this.nombre} y hago sonido porque estoy vivo`)
+    }
+}
+
+//Generar nuevas instancias
+const mimi = new Animal("Mimi", "Hembra"),
+scooby = new Animal("Scooby", "Macho");
+```
