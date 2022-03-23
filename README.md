@@ -70,3 +70,9 @@ class Animal {
 const mimi = new Animal("Mimi", "Hembra"),
 scooby = new Animal("Scooby", "Macho");
 ```
+### Binary Search Tree
+
+Post Order: 1 left, 2 Right, 3 cb.
+Preorder: 1 cb, 2 left, 3 right.
+Inorder: 1 left, 2 cb, 3 rifht.
+BFS: nodo, left, right (con push hacia array)
